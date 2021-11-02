@@ -6,16 +6,16 @@ namespace IJUNIORUHUUUU
     {
         static void Main(string[] args)
         {
-            int animalAge, deathCount, lifeTime, enemiesCount, min, max; bool buttActive, manGender, stayCheck; float armorCoef;
+            int animalAge; uint mapLength; double piNumber; char firstAlphabet; ushort playerMoney; short healthChange; string name; bool buttActive; float armorCoef; byte rageCounter;
             animalAge = 12;
-            deathCount = 33;
-            lifeTime = 270;
-            enemiesCount = 14;
-            min = 2;
-            max = 300;
+            mapLength = 222;
+            piNumber = 3.14159265359;
+            firstAlphabet = 'a';
+            playerMoney = 12000;
+            healthChange = -19;
             buttActive = true;
-            manGender = true;
-            stayCheck = false;
+            name = "Bob";
+            rageCounter = 23;
             armorCoef = 0.3f;
         }
     }

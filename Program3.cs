@@ -6,16 +6,14 @@ namespace task3
     {
         static void Main(string[] args)
         {
-            int crystalCost, crystalNumber, playerMoney, playerCrystal;string playerMoneyString, playerCrystalString;
+            int crystalCost, crystalNumber, playerMoney, playerCrystal;
             crystalCost = 8;
             crystalNumber = 13;
-            playerMoneyString = Console.ReadLine();
-            playerMoney = Convert.ToInt32(playerMoneyString);
-            Console.WriteLine($"Вы можете купить {crystalNumber} кристаллов по цене {crystalCost}");
-            playerCrystalString = Console.ReadLine();
-            playerCrystal = Convert.ToInt32(playerCrystalString);
-            playerMoney -= playerCrystal * crystalCost;
-            Console.WriteLine($"Количество купленных кристаллов - {playerCrystal}. Потраченное золото - {playerCrystal * crystalCost}. Оставшееся золото - {playerMoney}");
+            Console.WriteLine("Введи количество вашего золота");
+            playerMoney = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Вы можете купить до {crystalNumber} кристаллов по цене {crystalCost}. Сколько кристаллов вы хотите купить?");
+            playerCrystal = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Количество купленных кристаллов - {playerCrystal}. Потраченное золото - {playerCrystal * crystalCost}. Оставшееся золото - {playerMoney -= playerCrystal * crystalCost}. Оставшиеся кристаллы {crystalNumber - playerCrystal}");
         }
     }
 }
